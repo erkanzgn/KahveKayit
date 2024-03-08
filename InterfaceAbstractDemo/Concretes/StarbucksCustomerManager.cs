@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace InterfaceAbstractDemo.Concretes
 {
-    public class StarbucksCutomerManager :BaseCustomerManager
+    public class StarbucksCustomerManager :BaseCustomerManager
     {
         private ICustomerCheckService _customerCheckService;
-        public StarbucksCutomerManager(ICustomerCheckService customerCheckService)
+        public StarbucksCustomerManager(ICustomerCheckService customerCheckService)
         {
             _customerCheckService = customerCheckService;
         }

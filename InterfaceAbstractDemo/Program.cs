@@ -9,7 +9,7 @@ namespace InterfaceAbstractDemo
     {
         static void Main(string[] args)
         {
-            BaseCustomerManager customerManager = new StarbucksCutomerManager(new MernisServiceAdapters());
+            BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapters());
             customerManager.Save(new Customer { DateOfBirth = new DateTime(2004, 5, 1), FirstName = "Erkan", LastName = "Özgün", NationalityId = "1" });
             Console.ReadLine();
         }
